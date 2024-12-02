@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Clique com Frutas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/favicon.png" type="Image/png">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo de Clique com Frutas</h1>
+        <div class="score-board">
+            <p>Pontuação: <span id="score">0</span></p>
+            <p>Valor base do clique: <span id="click-value">1</span></p>
+            <p>Upgrades comprados: <span id="upgrades">0</span></p>
+        </div>
+
+        <button id="click-btn">Comece agora!</button>
+
+        <div class="upgrades">
+            <button id="upgrade-1" class="upgrade-btn">Upgrade 1 (Custo: 10 pontos)</button>
+            <button id="upgrade-2" class="upgrade-btn">Upgrade 2 (Custo: 50 pontos)</button>
+            <button id="upgrade-3" class="upgrade-btn">Upgrade 3 (Custo: 100 pontos)</button>
+        </div>
+
+        <div id="game-end" style="display: none;">
+            <h2>Você atingiu 500 pontos! Jogo finalizado!</h2>
+        </div>
+
+        <div class="minigame-area" id="minigame-area">
+            <h3>Minigame de Frutas</h3>
+            <div class="falling-fruits" id="falling-fruits"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
